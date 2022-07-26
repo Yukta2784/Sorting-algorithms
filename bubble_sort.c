@@ -2,6 +2,7 @@
 
 int main()
 {   int temp;
+    int flag=0;
     int a[5]={0,98,76,333,87};
     for(int i=0;i<5;i++)
     {
@@ -11,8 +12,14 @@ int main()
                temp=a[j];
                a[j]=a[j+1];
                a[j+1]=temp;
+                flag=1;
             }
         }
+        if(flag==0)
+        {
+            break;
+        }
+        
             
         
     }
